@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SWEN 789 Project 2</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="grammar.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="stylesheet" type="text/css" media="print" href="print.css">
+  </head>
+
+  <body>
+    <div id="heading">
+      <h1>ASL Font Translation Generator</h1>
+      <p>Press the button then say the phrase to recieve transcriptions in English and ASL.</p>
+      <button id="inputSpeech">Input Speech</button>
+    </div>
+
+    <div id="inputDiv">
+      <textarea rows='10' cols='40' id="ASLMessage" class="asl"></textarea>
+      <textarea rows='10' cols='45' id="EnglishMessage" class="english"></textarea>
+    </div>
+
+    <div id="printDiv">
+      <div id="ASLPrint">
+        
+      </div>
+
+      <div id="EnglishPrint">
+        
+      </div>
+    </div>
+
+    <div id="buttonDiv">
+      <button id="Export" onclick="exportToJavaScript()">Export Dictionary</button>
+      <a id="downloadAnchorElem" style="display:none"></a>
+      <button id="Export" onclick="exportToPrint()">Export to Print</button>
+    </div>
+
+    <div id="outputDiv">
+        <p class="output">Diagnostic Messages</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

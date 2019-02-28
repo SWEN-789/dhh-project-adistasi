@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "ASL-Font";
+  src: url('symbol_font_for_asl.ttf');
+}
+
+#heading, #inputDiv, #buttonDiv, #outputDiv {
+  display: none;
+}
+
+#printDiv {
+  display: inline-block;
+  width: 100%;
+}
+
+#ASLPrint {
+  border: 2px solid black;
+  border-radius: 25px;
+  width: 45%;
+  min-height: 250px;
+  float: left;
+  margin-left: 2%;
+  text-align: center;
+  font-size: 166%;
+  line-height: 1;
+
+}
+
+#ASLPrint p {
+    font-family: ASL-Font;
+}
+
+#EnglishPrint {
+  border: 2px solid black;
+  border-radius: 25px;
+  width: 45%;
+  min-height: 250px;
+  float: right;
+  margin-right: 2%;
+  text-align: center;
+  line-height: 1;
+  font-size: 166%;
+}
